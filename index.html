@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <title>Converter</title>
+</head>
+
+<body>
+    <form onsubmit="event.preventDefault()" class="form-wrapper">
+        <h1>Converter of different metric system values </h1>
+        <div class="form-section">
+            <label for="distance" class="form-text">from - </label>
+            <input type="text" id="distance" class="form-input" name="distance" placeholder="Enter number for convert" value="10">
+            <select name="" id="fromUnit" class="form-select"></select>
+            <label for="distance" class="form-text">to - </label>
+            <select name="" id="toUnit" class="form-select"></select>
+        </div>
+        <button id="sendDataButton" type="submit" class="form-button">Convert</button>
+        <div id="resultField" class="result"></div>
+    </form>
+    <script src="./index.js"></script>
+</body>
+
+</html>
